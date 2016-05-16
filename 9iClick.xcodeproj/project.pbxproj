@@ -10,6 +10,7 @@
 		C41056E01CE9AC1D00804EB4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41056DE1CE9AC1D00804EB4 /* HomeViewController.m */; };
 		C41056E11CE9AC1D00804EB4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41056DF1CE9AC1D00804EB4 /* HomeViewController.xib */; };
 		C41056E71CE9AC8700804EB4 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41056E31CE9AC8700804EB4 /* NavigationController.m */; };
+		C41056EE1CE9BEC100804EB4 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C41056ED1CE9BEC100804EB4 /* KxMenu.m */; };
 		C41D523E1CE9694A003E0419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41D523D1CE9694A003E0419 /* Assets.xcassets */; };
 		C41D52411CE9694A003E0419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41D523F1CE9694A003E0419 /* LaunchScreen.storyboard */; };
 		C41D524C1CE9694A003E0419 /* _iClickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C41D524B1CE9694A003E0419 /* _iClickTests.m */; };
@@ -132,6 +133,8 @@
 		C41056DF1CE9AC1D00804EB4 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		C41056E31CE9AC8700804EB4 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		C41056E61CE9AC8700804EB4 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		C41056EC1CE9BEC100804EB4 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
+		C41056ED1CE9BEC100804EB4 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
 		C41D522E1CE9694A003E0419 /* 9iClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9iClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41D523D1CE9694A003E0419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C41D52401CE9694A003E0419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -410,6 +413,15 @@
 			path = BaseController;
 			sourceTree = "<group>";
 		};
+		C41056EB1CE9BEC100804EB4 /* KXMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C41056EC1CE9BEC100804EB4 /* KxMenu.h */,
+				C41056ED1CE9BEC100804EB4 /* KxMenu.m */,
+			);
+			path = KXMenu;
+			sourceTree = "<group>";
+		};
 		C41D52251CE9694A003E0419 = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +534,7 @@
 		C41D52751CE9723D003E0419 /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				C41056EB1CE9BEC100804EB4 /* KXMenu */,
 				C41D52761CE9723D003E0419 /* AFNetworking */,
 				C41D529C1CE9723D003E0419 /* DateTools */,
 				C41D52AC1CE9723D003E0419 /* FMDB */,
@@ -1039,6 +1052,7 @@
 				C41D53821CE9723D003E0419 /* UIBarButtonItem+Extension.m in Sources */,
 				C41D536A1CE9723D003E0419 /* DateOperation.m in Sources */,
 				C41D53421CE9723D003E0419 /* UIButton+AFNetworking.m in Sources */,
+				C41056EE1CE9BEC100804EB4 /* KxMenu.m in Sources */,
 				C41D536C1CE9723D003E0419 /* HealthUpAPP.m in Sources */,
 				C41D53761CE9723D003E0419 /* LineChartView.m in Sources */,
 				C41D53861CE9723D003E0419 /* UIViewExt.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "KxMenu.h"
 
 @interface HomeViewController ()
 
@@ -16,27 +17,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+//    titleView.backgroundColor = [UIColor redColor];
+//    self.navigationItem.titleView = titleView;
+    
     self.title = @"易转发";
+
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(addExprateDateRemind) image:@"add" highlightImage:@"add_highlight"];
+
+}
+
+- (void)addExprateDateRemind
+{
+    NSArray *menuItems =
+    @[[KxMenuItem menuItem:@"分享"
+                     image:nil
+                    target:self
+                    action:@selector(shareAction)],
+      
+      [KxMenuItem menuItem:@"检查更新"
+                     image:nil
+                    target:self
+                    action:@selector(checkVersion)],
+      ];
     
-    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-    titleView.backgroundColor = [UIColor redColor];
+    KxMenuItem *firstItem = menuItems[0];
+    firstItem.foreColor = [UIColor blackColor];
+    firstItem.alignment = NSTextAlignmentLeft;
     
-    self.navigationItem.titleView = titleView;
+    KxMenuItem *secondItem = menuItems[1];
+    secondItem.foreColor = [UIColor blackColor];
+    secondItem.alignment = NSTextAlignmentLeft;
+    
+    [KxMenu setTintColor:[UIColor whiteColor]];
+    [KxMenu setTitleFont:[UIFont systemFontOfSize:16]];
+    [KxMenu showMenuInView:self.view
+                  fromRect:CGRectMake(ScreenWidth - 60, -40, 60, 40)
+                 menuItems:menuItems];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)shareAction
+{
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)checkVersion
+{
+    
 }
-*/
 
 @end
