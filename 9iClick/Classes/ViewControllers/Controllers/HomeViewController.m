@@ -22,6 +22,10 @@
     titleView.backgroundColor = [UIColor redColor];
     
     self.navigationItem.titleView = titleView;
+    
+    //提交代码合并测试
+    NSLog(@"提交了啊!");
+    
 }
 
 - (void)didReceiveMemoryWarning {
