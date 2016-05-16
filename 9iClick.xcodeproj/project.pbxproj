@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41056E01CE9AC1D00804EB4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41056DE1CE9AC1D00804EB4 /* HomeViewController.m */; };
+		C41056E11CE9AC1D00804EB4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41056DF1CE9AC1D00804EB4 /* HomeViewController.xib */; };
+		C41056E71CE9AC8700804EB4 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41056E31CE9AC8700804EB4 /* NavigationController.m */; };
 		C41D523E1CE9694A003E0419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41D523D1CE9694A003E0419 /* Assets.xcassets */; };
 		C41D52411CE9694A003E0419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41D523F1CE9694A003E0419 /* LaunchScreen.storyboard */; };
 		C41D524C1CE9694A003E0419 /* _iClickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C41D524B1CE9694A003E0419 /* _iClickTests.m */; };
@@ -124,6 +127,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C41056DD1CE9AC1D00804EB4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C41056DE1CE9AC1D00804EB4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C41056DF1CE9AC1D00804EB4 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C41056E31CE9AC8700804EB4 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		C41056E61CE9AC8700804EB4 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		C41D522E1CE9694A003E0419 /* 9iClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9iClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41D523D1CE9694A003E0419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C41D52401CE9694A003E0419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -359,6 +367,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C41056D91CE9AC0A00804EB4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C41056DA1CE9AC0A00804EB4 /* Controllers */,
+				C41056DB1CE9AC0A00804EB4 /* Models */,
+				C41056DC1CE9AC0A00804EB4 /* Views */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C41056DA1CE9AC0A00804EB4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C41056DD1CE9AC1D00804EB4 /* HomeViewController.h */,
+				C41056DE1CE9AC1D00804EB4 /* HomeViewController.m */,
+				C41056DF1CE9AC1D00804EB4 /* HomeViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C41056DB1CE9AC0A00804EB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C41056DC1CE9AC0A00804EB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C41056E21CE9AC5B00804EB4 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				C41056E61CE9AC8700804EB4 /* NavigationController.h */,
+				C41056E31CE9AC8700804EB4 /* NavigationController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
 		C41D52251CE9694A003E0419 = {
 			isa = PBXGroup;
 			children = (
@@ -434,46 +485,16 @@
 				C41D53261CE9723D003E0419 /* Util */,
 				C41D52EE1CE9723D003E0419 /* Commom */,
 				C41D52751CE9723D003E0419 /* OpenSource */,
-				C41D52651CE97074003E0419 /* Home */,
+				C41056D91CE9AC0A00804EB4 /* ViewControllers */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		C41D52651CE97074003E0419 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				C41D52661CE97074003E0419 /* Controllers */,
-				C41D52671CE97074003E0419 /* Models */,
-				C41D52681CE97074003E0419 /* Views */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		C41D52661CE97074003E0419 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C41D52671CE97074003E0419 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C41D52681CE97074003E0419 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		C41D52691CE97074003E0419 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				C41D526A1CE97074003E0419 /* AppDelegate */,
+				C41056E21CE9AC5B00804EB4 /* BaseController */,
 				C41D526D1CE97074003E0419 /* main.m */,
 			);
 			path = Main;
@@ -936,6 +957,7 @@
 				C41D523E1CE9694A003E0419 /* Assets.xcassets in Resources */,
 				C41D53541CE9723D003E0419 /* MJRefresh.bundle in Resources */,
 				C41D53471CE9723D003E0419 /* DateTools.bundle in Resources */,
+				C41056E11CE9AC1D00804EB4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,6 +1005,7 @@
 				C41D536B1CE9723D003E0419 /* GUIDCreat.m in Sources */,
 				C41D537F1CE9723D003E0419 /* SlideSwithView.m in Sources */,
 				C41D533E1CE9723D003E0419 /* AFURLSessionManager.m in Sources */,
+				C41056E01CE9AC1D00804EB4 /* HomeViewController.m in Sources */,
 				C41D53661CE9723D003E0419 /* TXHRulerScrollView.m in Sources */,
 				C41D53691CE9723D003E0419 /* CommonFunction.m in Sources */,
 				C41D533D1CE9723D003E0419 /* AFURLResponseSerialization.m in Sources */,
@@ -1008,6 +1031,7 @@
 				C41D534C1CE9723D003E0419 /* DTTimePeriodGroup.m in Sources */,
 				C41D534E1CE9723D003E0419 /* FMDatabase.m in Sources */,
 				C41D53481CE9723D003E0419 /* DTError.m in Sources */,
+				C41056E71CE9AC8700804EB4 /* NavigationController.m in Sources */,
 				C41D533F1CE9723D003E0419 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				C41D53371CE9723D003E0419 /* AFHTTPRequestOperationManager.m in Sources */,
 				C41D53851CE9723D003E0419 /* UITabBar+badge.m in Sources */,
@@ -1263,6 +1287,7 @@
 				C41D525D1CE9694A003E0419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C41D525E1CE9694A003E0419 /* Build configuration list for PBXNativeTarget "9iClickTests" */ = {
 			isa = XCConfigurationList;
@@ -1271,6 +1296,7 @@
 				C41D52601CE9694A003E0419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C41D52611CE9694A003E0419 /* Build configuration list for PBXNativeTarget "9iClickUITests" */ = {
 			isa = XCConfigurationList;
@@ -1279,6 +1305,7 @@
 				C41D52631CE9694A003E0419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
