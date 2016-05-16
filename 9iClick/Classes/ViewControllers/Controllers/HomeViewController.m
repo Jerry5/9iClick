@@ -18,6 +18,10 @@
     [super viewDidLoad];
     self.title = @"易转发";
     
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+    titleView.backgroundColor = [UIColor redColor];
+    
+    self.navigationItem.titleView = titleView;
 }
 
 - (void)didReceiveMemoryWarning {
