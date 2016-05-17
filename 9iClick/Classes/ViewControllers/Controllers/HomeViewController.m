@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.title = @"易转发";
     
+    NSLog(@"屌炸天");
 }
 
 - (void)didReceiveMemoryWarning {
